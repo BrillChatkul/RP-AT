@@ -11,7 +11,7 @@ function Oneverone() {
             <input style={{width:'20vw'}}></input>
           </div>
           <br/>
-          <Button>Random now!</Button>
+          <Button style={{color: '#355555 !important'}}>Random now!</Button>
   
         </div>
             
