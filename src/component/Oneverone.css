@@ -1,0 +1,8 @@
+.Container-1v1{
+    display:flex;
+    background-color: #FF6666;
+    width:100vw;
+    height:448px;
+    flex-direction:column;
+    align-items:center;
+}
