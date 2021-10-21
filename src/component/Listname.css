@@ -1,0 +1,13 @@
+.Listname-container{
+  background-color: #FF9F9F;
+  white-space: nowrap; 
+  width: 231px;
+  margin: 30px;
+  font-size: 43px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 30px;
+  color: aliceblue;
+}
