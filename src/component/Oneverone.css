@@ -1,4 +1,6 @@
 .Container-1v1{
+    animation: Fadeup 1s;
+    -webkit-animation: Fadeup 1s;
     display:flex;
     background-color: #FF6666;
     width:100vw;
@@ -35,4 +37,24 @@
 }
 .Button-random:active{
     background-color: #FFC93D;
+}
+@-webkit-keyframes Fadeup{
+    from{
+        opacity: 0;
+        transform: translate(0,-25%);
+    }
+    to{
+        opacity: 1;
+        transform: none;
+    }
+}
+@keyframes Fadeup{
+    from{
+        opacity: 0;
+        transform: translate(0,-25%);
+    }
+    to{
+        opacity: 1;
+        transform: none;
+    }
 }

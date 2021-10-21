@@ -25,13 +25,27 @@ function App() {
       alert('No people in list.')
     }
   }
+
+  const [Page,SetPage] = useState(false)
+  function Randompage(){
+      SetPage(true);
+    
+  }
   const showDataArray = dataArray.map((n)=><Listname name={n}/>)
     
   return (
-    <div className='App'>
+    <div>
     <Oneverone setvalue={pushArray} removeAR={RemoveName}/>
-    <div style={{display:'flex',flexWrap:'wrap',justifyContent:'center'}}>{showDataArray}</div>
+    <div className='App-showData-Contain'>{showDataArray}</div>
+    <div className='App-footer-Contain'>
+    <button className='Button-random' onClick={Randompage}>Random now!!</button>
     </div>
+    {Page==true?<div style={{display:'flex',position:'absolute',backgroundColor:'red',width:'100vw',height:'100vh',zIndex:'1000',left:'0px',top:'0px',animation: 'Fadedown 1s'}}
+    onClick={()=>{SetPage(false)}}></div>:null}
+    
+    </div>
+
+    
   );
 }
 
