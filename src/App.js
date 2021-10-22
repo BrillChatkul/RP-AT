@@ -65,6 +65,11 @@ function App() {
       alert('Please Enter more than 1 name before random.')
     }
   }
+  function NewRandomPage(){
+    setDataArray([])
+    setDataNewArray([])
+    SetPage(false);
+  }
   const showDataArray = dataArray.map((n)=><Listname name={n}/>)
     
   return (
@@ -74,7 +79,7 @@ function App() {
     <div className='App-footer-Contain'>
     <button className='Button-random' onClick={Randompage}>Random now!!</button>
     </div>
-    {Page==true?<Resultpage endPage={SetPage} PeopleList={dataArray} NewPeopleList={dataNewArray}></Resultpage>:null}
+    {Page==true?<Resultpage endPage={SetPage} NewRandom={NewRandomPage} PeopleList={dataArray} NewPeopleList={dataNewArray}></Resultpage>:null}
     
     </div>
 

@@ -26,7 +26,7 @@ function Oneverone(props) {
         <div className='Container-1v1'>
           <p style={{color:'white',fontSize:'64px',fontWeight:'bold'}}>1v1</p>
           <p style={{color:'white',fontSize:'36px'}}>Enter Name</p>
-          <input className='Input-name' type='text' value={name} onKeyDown={((e)=>{CheckEnter(e)})} maxLength='20' onChange={(e)=>{onChangeName(e)}}></input>
+          <input className='Input-name' type='text' value={name} onKeyDown={((e)=>{CheckEnter(e)})} maxLength='15' onChange={(e)=>{onChangeName(e)}}></input>
           <br/>
           <div>
           <button id='buttonRandom' className='Button-random' style={{width:'200px',textAlign:'center'}} onClick={(e)=>{SentName(e)}}>Enter</button>
