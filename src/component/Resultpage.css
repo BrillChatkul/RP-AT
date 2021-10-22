@@ -1,4 +1,4 @@
-.Resulthpage-Container{
+.Resultpage-Container{
     display: flex;
     position: absolute;
     background-color: rgba(255, 126, 126, 0.322);
@@ -11,7 +11,7 @@
     justify-content: center;
     align-items: center;
 }
-.Resulthpage-page{
+.Resultpage-page{
     display: flex;
     padding: 20px;
     flex-direction: column;
@@ -24,5 +24,57 @@
     font-size: 30px;
     animation: Fadedown 0.5s;
     overflow: hidden;
+
+}
+.Resultpage-header{
+    background-color: #FF6666;
+    padding: 30px;
+    color: white;
+    border-radius: 30px;
+}
+.Resultpage-line{
+    background-color: #FF6666;
+    width: 80%;
+    height: 5px;
+    border-radius: 2px;
+}
+.RE-Button-random{
+    background-color: #FFC93D;
+    border-radius: 30px;
+    width: 301px;
+    height: 66px;
+    border: none;
+    color: white;
+    font-size: 36px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.RE-Button-random:hover{
+    background-color: #fdb500;
+}
+.RE-Button-random:active{
+    background-color: #FFC93D;
+}
+@media only screen and (max-width: 600px){
+    .Resultpage-header{
+        background-color: #FF6666;
+        padding: 20px;
+        font-size: 22px;
+    }
+    .Resultpage-page{
+        width: 300px;
+        font-size: 18px;
+    }
+    .RE-Button-random{
+        width: 120px;
+        height: 35px;
+        font-size: 22px;
+        text-align: center;
+        margin-left: 10px;
+        margin-right: 10px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
 
 }

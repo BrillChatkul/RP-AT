@@ -30,8 +30,12 @@ function App() {
   function RemoveName(){
     let copyDataList = [...dataArray];
     if(copyDataList.length>0){
-      copyDataList.pop();
-      setDataArray(copyDataList);
+      let text = 'Delete '+dataArray[dataArray.length-1]
+      var checkConfirm = window.confirm(text)
+      if (checkConfirm == true){
+        copyDataList.pop();
+        setDataArray(copyDataList);
+      }
     }
     else{
       alert('No people in list.')
@@ -66,15 +70,19 @@ function App() {
     }
   }
   function NewRandomPage(){
+    var checkConfirm = window.confirm('New random?\n***New random will remove all name.')
+    if (checkConfirm == true){
     setDataArray([])
     setDataNewArray([])
     SetPage(false);
+    }
   }
   const showDataArray = dataArray.map((n)=><Listname name={n}/>)
     
   return (
     <div>
     <Oneverone setvalue={pushArray} removeAR={RemoveName}/>
+    <br/>
     <div className='App-showData-Contain'>{showDataArray}</div>
     <div className='App-footer-Contain'>
     <button className='Button-random' onClick={Randompage}>Random now!!</button>
