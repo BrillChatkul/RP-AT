@@ -19,7 +19,8 @@
     align-items: center;
     background-color: white;
     position:absolute;
-    width: 1000px;
+    width: 700px;
+    overflow: hidden;
     max-height: 80%;
     font-size: 30px;
     animation: Fadedown 0.5s;
