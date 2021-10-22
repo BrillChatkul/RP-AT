@@ -1,0 +1,21 @@
+.Resulthpage-Container{
+    display: flex;
+    position: absolute;
+    background-color: rgba(255, 126, 126, 0.322);
+    backdrop-filter: blur(3px);
+    width: 100vw;
+    height: 100vh;
+    z-Index: 100;
+    left: 0px;
+    top: 0px;
+    justify-content: center;
+    align-items: center;
+}
+.Resulthpage-page{
+    background-color: white;
+    position:absolute;
+    width: 1000px;
+    height: 80%;
+    animation: Fadedown 0.5s;
+
+}
