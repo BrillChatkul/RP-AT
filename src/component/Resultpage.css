@@ -61,16 +61,16 @@
     .Resultpage-header{
         background-color: #FF6666;
         padding: 20px;
-        font-size: 22px;
+        font-size: larger;
     }
     .Resultpage-page{
         width: 300px;
-        font-size: 18px;
+        font-size:large;
     }
     .RE-Button-random{
         width: 120px;
         height: 35px;
-        font-size: 22px;
+        font-size:large;
         text-align: center;
         margin-left: 10px;
         margin-right: 10px;

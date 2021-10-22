@@ -84,6 +84,7 @@ function App() {
     <Oneverone setvalue={pushArray} removeAR={RemoveName}/>
     <br/>
     <div className='App-showData-Contain'>{showDataArray}</div>
+    <div className='App-footer-Contain' style={{position:'static',backgroundColor:'white'}}></div>
     <div className='App-footer-Contain'>
     <button className='Button-random' onClick={Randompage}>Random now!!</button>
     </div>

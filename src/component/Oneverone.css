@@ -94,30 +94,30 @@
     .Oneverone-topic{
         padding: 1px;
         margin: 1px;
-        font-size: 24px;
+        font-size: xx-large;
     }
     .Oneverone-font{
         padding: 1px;
         margin: 1px;
-        font-size: 18px;
+        font-size: medium;
     }
     .Input-name{
         width: 200px;
         height: 25px;
-        font-size: 16px;
+        font-size: medium;
     }
     .Button-random{
         border-radius: 30px;
         width: 175px;
         height: 35px;
-        font-size: 22px;
+        font-size: larger;
         margin-left: 10px;
         margin-right: 10px;
     }
     .Oneverone-button{
         width: 100px;
         height: 30px;
-        font-size: 18px;
+        font-size: larger;
         text-align: center;
 
     }
