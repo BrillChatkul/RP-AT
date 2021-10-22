@@ -1,15 +1,18 @@
 import './Resultpage.css'
 function Resultpage(props){
     const{ endPage, PeopleList, NewPeopleList,NewRandom } = props
-    const ShowPeople = PeopleList.map((n,i)=><p><span style={{color:'#FF6666',fontWeight:'bold'}}>{n} </span>
-    วาดของ <span style={{fontStyle:'italic',textDecoration:'underline'}}>{NewPeopleList[i]}</span> </p>)
+    const ShowPeople = PeopleList.map((n,i)=><div style={{display:'flex',justifyContent:'space-around'}}>
+        <p className='Oldname'>{n}</p>
+        <p>-วาดของ-</p>
+        <p className='Newname'>{NewPeopleList[i]}</p> 
+        </div>)
     return(
         <div className='Resultpage-Container'>
             <div className='Resultpage-page'>
                 <p className='Resultpage-header'>RESULT</p>
                 <div className='Resultpage-line'></div>
                 <br/>
-                <div style={{display:'flex',flexDirection:'column',alignItems:'center',width:'80%',overflowY:'scroll'}}>
+                <div style={{display:'flex',flexDirection:'column',width:'80%',overflowY:'scroll'}}>
                 {ShowPeople}
                 </div>
                 <br/>
