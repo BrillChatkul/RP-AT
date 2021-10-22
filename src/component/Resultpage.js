@@ -14,7 +14,7 @@ function Resultpage(props){
                 </div>
                 <br/>
                 <div>
-                    <button className='Button-random' onClick={()=>{NewRandom()}}>New Random</button>
+                    <button className='Button-random' onClick={()=>{NewRandom()}}>New random</button>
                     <button className='Button-random' onClick={()=>{endPage(false)}}>Close</button>
                 </div>
             </div>

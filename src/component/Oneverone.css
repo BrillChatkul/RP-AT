@@ -8,6 +8,16 @@
     flex-direction:column;
     align-items:center;
     justify-content: center;
+    
+}
+.Oneverone-topic{
+    color: white;
+    font-size: 64px;
+    font-weight: bold;
+}
+.Oneverone-font{
+    color: white;
+    font-size: 36px;
 }
 .Input-name{
     border-radius: 30px;
@@ -33,9 +43,27 @@
 }
 .Button-random:hover{
     background-color: #fdb500;
-    border-width: 10px;
 }
 .Button-random:active{
+    background-color: #FFC93D;
+}
+
+.Oneverone-button{
+    background-color: #FFC93D;
+    border-radius: 30px;
+    width: 200px;
+    height: 66px;
+    border: none;
+    color: white;
+    font-size: 36px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.Oneverone-button:hover{
+    background-color: #fdb500;
+}
+.Oneverone-button:active{
     background-color: #FFC93D;
 }
 @-webkit-keyframes Fadeup{
@@ -56,5 +84,41 @@
     to{
         opacity: 1;
         transform: none;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .Container-1v1{
+        height: 200px;
+    }
+    .Oneverone-topic{
+        padding: 1px;
+        margin: 1px;
+        font-size: 24px;
+    }
+    .Oneverone-font{
+        padding: 1px;
+        margin: 1px;
+        font-size: 18px;
+    }
+    .Input-name{
+        width: 200px;
+        height: 25px;
+        font-size: 16px;
+    }
+    .Button-random{
+        border-radius: 30px;
+        width: 250px;
+        height: 30px;
+        font-size: 18px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .Oneverone-button{
+        width: 100px;
+        height: 30px;
+        font-size: 18px;
+        text-align: center;
+
     }
 }

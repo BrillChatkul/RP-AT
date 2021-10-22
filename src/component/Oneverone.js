@@ -24,13 +24,13 @@ function Oneverone(props) {
   return (
        
         <div className='Container-1v1'>
-          <p style={{color:'white',fontSize:'64px',fontWeight:'bold'}}>1v1</p>
-          <p style={{color:'white',fontSize:'36px'}}>Enter Name</p>
+          <p className='Oneverone-topic'>1v1</p>
+          <p className='Oneverone-font'>Enter Name</p>
           <input className='Input-name' type='text' value={name} onKeyDown={((e)=>{CheckEnter(e)})} maxLength='15' onChange={(e)=>{onChangeName(e)}}></input>
           <br/>
           <div>
-          <button id='buttonRandom' className='Button-random' style={{width:'200px',textAlign:'center'}} onClick={(e)=>{SentName(e)}}>Enter</button>
-          <button className='Button-random' style={{width:'200px',textAlign:'center'}} onClick={(e)=>{removeAR()}}>Remove</button></div>
+          <button id='buttonRandom' className='Oneverone-button' onClick={(e)=>{SentName(e)}}>Enter</button>
+          <button className='Oneverone-button' onClick={(e)=>{removeAR()}}>Remove</button></div>
           {/* {name != ''?<p>{name}</p>:null} */}
         </div>
             
