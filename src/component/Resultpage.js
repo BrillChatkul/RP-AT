@@ -19,7 +19,7 @@ function Resultpage(props){
                 <div style={{display:'flex',justifyContent:'center'}}>
                     <button className='RE-Button-random' onClick={()=>{NewRandom()}}>New random</button>
                     <button className='RE-Button-random' onClick={()=>{
-                        var checkConfirm = window.confirm('Close result?\n***Close will not this save result.')
+                        var checkConfirm = window.confirm('Close result?\n***Close will not save this result.')
                         if (checkConfirm == true){
                         endPage(false)}}}>Close</button>
                 </div>
